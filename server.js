@@ -70,6 +70,6 @@ io.on('connection', (socket) => {
 	});
 });
 
-const PORT = 3000 || process.env.PORT; //to check if we have environment variable port and use that
+const PORT = process.env.PORT || 3000; //to check if we have environment variable port and use that
 
 server.listen(PORT, () => console.log(`Server runs on port ${PORT}`)); //to listen to our port where application runs
